@@ -5,18 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[SS] 订阅IP：129.148.*.*", server: nbyd1.nothingforward.link, port: 52874, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇺🇸 ISP：United States-Digital Ocean", server: nbyd1.nothingforward.link, port: 52874, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🏳️‍🌈 流量：0 / 1024 GB", server: nbdx.nothingforward.link, port: 49192, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 到期：2025.01.26 00:00:00", server: sz.yyds.rest, port: 21318, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇧🇷 BR 圣保罗-定制 A", server: nbyd1.nothingforward.link, port: 52874, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇧🇷 BR 圣保罗-定制 B", server: nbyd1.nothingforward.link, port: 52874, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇧🇷 BR 圣保罗-定制 C", server: sz.yyds.rest, port: 21318, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇧🇷 BR 圣保罗-定制 K1", server: csyd1.nothingforward.link, port: 26107, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇧🇷 BR 圣保罗-定制 K2", server: nbdx.nothingforward.link, port: 22711, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇧🇷 BR 圣保罗-定制 K3", server: nbdx.nothingforward.link, port: 49192, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇧🇷 BR 圣保罗-定制 T1", server: go.yyds.rest, port: 31431, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
-  - {name: "[SS] 🇧🇷 BR 圣保罗-定制 测试备用", server: shdata1.fc-sigma.xyz, port: 11067, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 6fd8a8e2d5.m.ctrip.com}, udp: true}
+  - {name: "[SS] 订阅IP：129.148.*.*", server: nbyd2.nothingforward.link, port: 55303, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
+  - {name: "[SS] 🇺🇸 ISP：United States-Digital Ocean", server: sz.yyds.rest, port: 45939, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
+  - {name: "[SS] 🏳️‍🌈 流量：0 / 1024 GB", server: csyd1.nothingforward.link, port: 15392, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
+  - {name: "[SS] 到期：2025.01.26 00:00:00", server: nbdx.nothingforward.link, port: 51892, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
   - {name: "[SS] 🇸🇬 SG 新加坡-定制 A", server: nbyd2.nothingforward.link, port: 55303, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
   - {name: "[SS] 🇸🇬 SG 新加坡-定制 B", server: nbyd1.nothingforward.link, port: 30225, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
   - {name: "[SS] 🇸🇬 SG 新加坡-定制 C", server: sz.yyds.rest, port: 45939, type: ss, cipher: aes-128-gcm, password: 4ca746e2-75ce-4ad9-8619-6e26f497a14a, udp: true}
@@ -37,14 +29,6 @@ proxy-groups:
       - "[SS] 🇺🇸 ISP：United States-Digital Ocean"
       - "[SS] 🏳️‍🌈 流量：0 / 1024 GB"
       - "[SS] 到期：2025.01.26 00:00:00"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 A"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 B"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 C"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K1"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K2"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K3"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 T1"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 测试备用"
       - "[SS] 🇸🇬 SG 新加坡-定制 A"
       - "[SS] 🇸🇬 SG 新加坡-定制 B"
       - "[SS] 🇸🇬 SG 新加坡-定制 C"
@@ -63,13 +47,6 @@ proxy-groups:
       - "[SS] 🇺🇸 ISP：United States-Digital Ocean"
       - "[SS] 🏳️‍🌈 流量：0 / 1024 GB"
       - "[SS] 到期：2025.01.26 00:00:00"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 A"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 B"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 C"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K1"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K2"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K3"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 T1"
       - "[SS] 🇸🇬 SG 新加坡-定制 A"
       - "[SS] 🇸🇬 SG 新加坡-定制 B"
       - "[SS] 🇸🇬 SG 新加坡-定制 C"
@@ -86,13 +63,6 @@ proxy-groups:
       - "[SS] 🇺🇸 ISP：United States-Digital Ocean"
       - "[SS] 🏳️‍🌈 流量：0 / 1024 GB"
       - "[SS] 到期：2025.01.26 00:00:00"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 A"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 B"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 C"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K1"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K2"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K3"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 T1"
       - "[SS] 🇸🇬 SG 新加坡-定制 A"
       - "[SS] 🇸🇬 SG 新加坡-定制 B"
       - "[SS] 🇸🇬 SG 新加坡-定制 C"
@@ -110,13 +80,6 @@ proxy-groups:
       - "[SS] 🇺🇸 ISP：United States-Digital Ocean"
       - "[SS] 🏳️‍🌈 流量：0 / 1024 GB"
       - "[SS] 到期：2025.01.26 00:00:00"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 A"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 B"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 C"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K1"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K2"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K3"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 T1"
       - "[SS] 🇸🇬 SG 新加坡-定制 A"
       - "[SS] 🇸🇬 SG 新加坡-定制 B"
       - "[SS] 🇸🇬 SG 新加坡-定制 C"
@@ -147,14 +110,6 @@ proxy-groups:
       - "[SS] 🇺🇸 ISP：United States-Digital Ocean"
       - "[SS] 🏳️‍🌈 流量：0 / 1024 GB"
       - "[SS] 到期：2025.01.26 00:00:00"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 A"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 B"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 C"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K1"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K2"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 K3"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 T1"
-      - "[SS] 🇧🇷 BR 圣保罗-定制 测试备用"
       - "[SS] 🇸🇬 SG 新加坡-定制 A"
       - "[SS] 🇸🇬 SG 新加坡-定制 B"
       - "[SS] 🇸🇬 SG 新加坡-定制 C"
